@@ -5,54 +5,61 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Eva's Portfolio</title>
 </head>
 <body>
 <header>
     <!--navbar starts-->
-    <nav>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">My projects</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Contact me</a></li>
-        </ul>
-    </nav>
+    <div class="navbar-fixed">
+        <nav>
+            <ul>
+                <li><a href="#home"  class="home nav-active">Home</a></li>
+                <li><a href="#my-projects">My projects</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!--navbar ends-->
 
     <!--intro hero image starts -->
-    <div class="hero-image">
+    <div class="hero-image" id="home">
         <div class="hero-text">
             <h1>I am Eva Roets,</h1>
             <p>Junior web developer,<br> with a passion for aesthetics</p>
             <button>Contact me</button>
         </div>
     </div>
-
     <!--intro hero image end-->
+
+
 </header>
 
 <!--projects starts-->
-<section class="projects"></section>
+<section class="my-projects" id="my-projects">
+
+
+</section>
+
 
 <!--about me starts-->
-<section class="aboutMe"></section>
+<section class="about-me" id="about-me"></section>
 <h3>Hi, I'm Eva!</h3>
 
 <p> I started off in communication and digital marketing and got a taste for web development. On the exciting adventure
     of learning the ropes.</p>
 
 <!--contact me starts-->
-<section class="contact"></section>
+<section class="contact" id="contact"></section>
 
 <footer>
     Copyright &copy;
     <script>document.write(new Date().getFullYear())</script>
     Eva Roets
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
